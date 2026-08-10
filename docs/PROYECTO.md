@@ -59,14 +59,27 @@ Ejemplos:
 - Rápido
 - Confiable
 
+## Entorno de desarrollo
+- JDK 8 de 64 bits.
+- IntelliJ IDEA.
+- Git para Windows.
+- Forge MDK 1.16.5-36.2.34.
+- Pixelmon 1.16.5-9.1.13 Universal como dependencia local.
+- No instalar Gradle por separado: se utilizará el Gradle Wrapper incluido en Forge MDK.
+
 ## Estrategia técnica
-1. Preparar Forge 1.16.5.
-2. Integrar Pixelmon 9.1.13 como dependencia local.
-3. Detectar `PixelmonEntity` bajo la mira.
-4. Leer los datos disponibles.
-5. Validarlos contra información real.
-6. Traducirlos al español.
-7. Construir el HUD únicamente cuando los datos sean correctos.
+1. Clonar el repositorio de GitHub en la PC.
+2. Preparar Forge 1.16.5.
+3. Integrar Pixelmon 9.1.13 como dependencia local.
+4. Comprobar que Minecraft + Forge + Pixelmon + NairaPixel inicien correctamente.
+5. Detectar `PixelmonEntity` bajo la mira.
+6. Leer los datos disponibles.
+7. Validarlos contra información real.
+8. Traducirlos al español.
+9. Construir el HUD únicamente cuando los datos sean correctos.
+
+## Pruebas
+Durante el desarrollo se utilizará `gradlew runClient`. Cuando la versión sea estable se compilará con `gradlew build`; el `.jar` resultante se colocará finalmente en la carpeta `mods`.
 
 ## Regla de validación
 **Dato leído -> dato validado -> dato mostrado.**
