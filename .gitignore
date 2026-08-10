@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+
+# Minecraft / Forge runtime
+run/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local dependencies / proprietary or third-party jars
+libs/*.jar
+
+# Logs
+*.log
