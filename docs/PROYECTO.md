@@ -67,6 +67,12 @@ Ejemplos:
 - Pixelmon 1.16.5-9.1.13 Universal como dependencia local.
 - No instalar Gradle por separado: se utilizará el Gradle Wrapper incluido en Forge MDK.
 
+### Estado del entorno
+- Java verificado: Eclipse Temurin JDK 8u502 x64.
+- `java` y `javac` funcionan con Java 8.
+- Git verificado: 2.52.0.windows.1.
+- Pendiente: definir `JAVA_HOME` apuntando al JDK 8.
+
 ## Estrategia técnica
 1. Clonar el repositorio de GitHub en la PC.
 2. Preparar Forge 1.16.5.
