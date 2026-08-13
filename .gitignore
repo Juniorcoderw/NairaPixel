@@ -22,3 +22,8 @@ libs/*.jar
 
 # Logs
 *.log
+
+# Pixelmon extraction / local analysis
+/pixelmon_scan/
+/data/
+/enumupdate.txt

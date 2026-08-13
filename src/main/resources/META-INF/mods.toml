@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+
+issueTrackerURL="https://github.com/Juniorcoderw/NairaPixel/issues"
+
+[[mods]]
+modId="nairapixel"
+version="${file.jarVersion}"
+displayName="NairaPixel"
+displayURL="https://github.com/Juniorcoderw/NairaPixel"
+authors="HJunior"
+
+description='''
+NairaPixel es un asistente cliente para Pixelmon 1.16.5.
+
+Incluye herramientas visuales para consultar informacion util
+durante la partida, como el Scanner y Naira Legend.
+'''
+
+[[dependencies.nairapixel]]
+modId="forge"
+mandatory=true
+versionRange="[36.2.34,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.nairapixel]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5,1.17)"
+ordering="NONE"
+side="BOTH"
