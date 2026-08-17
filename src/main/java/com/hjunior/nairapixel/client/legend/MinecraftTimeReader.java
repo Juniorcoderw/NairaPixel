@@ -44,6 +44,28 @@ public class MinecraftTimeReader {
         );
     }
 
+    public static boolean esPeriodoActivo(
+            String key
+    ){
+        if(key==null||
+                key.trim().isEmpty()){
+
+            return true;
+        }
+
+        long ticks=getDayTicks();
+
+        if(ticks<0){
+            return false;
+        }
+
+        PixelmonTimePeriod periodo=
+                PixelmonTimePeriod.fromKey(key);
+
+        return periodo!=null&&
+                periodo.estaActivo(ticks);
+    }
+
     public static VentanaTiempo calcularVentana(
             int segundosMin,
             int segundosMax
